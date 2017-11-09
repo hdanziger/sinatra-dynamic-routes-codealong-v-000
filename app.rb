@@ -23,6 +23,12 @@ class App < Sinatra::Base
     "Goodbye, #{@user_name}."
   end
 
+  get '/mutiply/:num1/:num2' do
+    @num_1 = params[:num1]
+    @num_2 = params[:num2]
+    "#{num1} + #{num2}"
+  end
+
   # Code your final two routes here:
 
 end
